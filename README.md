@@ -52,6 +52,6 @@ Google Kubernetes Engine
 	- Confirm the service is active: "kubectl get service"
 	
 13. Should you wish to update the container down the line, follow instructions 8 and 10 to build and push the new container, then set the GKE to use it with the following:
- - "kubectl set image deployment/<yourdeployname> <yourdeployname>=gcr.io/${PROJECT_ID}/<anynamehere>:v2"
+ - "kubectl set image deployment/<yourdeployname> <anynamehere>=gcr.io/${PROJECT_ID}/<anynamehere>:v2"
 
 Notes: This deployment is very basic and does not provide CI/CD, autoscaling, reliabiltiy, more advanced monitoring or a custom URL. Improvements could be made here by setting up a CI/CD pipeline with Cloud Build to ensure timely deployment and management of code changes, alerting via email or text could be added to ensure immediate notificaiton of website issues.  
